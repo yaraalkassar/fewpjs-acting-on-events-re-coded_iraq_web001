@@ -19,7 +19,7 @@ function moveDodgerRight() {
   let right = parseInt(rightNumbers, 10);
 
   if (right > 0) {
-    dodger.style.left = `${left + 1}px`;
+    dodger.style.right = `${left + 1}px`;
   }
 }
 document.addEventListener("keydown", function(e) {
