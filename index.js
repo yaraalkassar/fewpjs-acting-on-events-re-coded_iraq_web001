@@ -14,7 +14,6 @@ document.addEventListener("keydown", function(e) {
   }
 });
 // Right
-let dodger = document.getElementById("dodger");
 function moveDodgerRight() {
   let leftNumbers = dodger.style.right.replace("px", "");
   let right = parseInt(leftNumbers, 10);
