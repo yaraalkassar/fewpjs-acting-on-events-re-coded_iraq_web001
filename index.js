@@ -11,5 +11,22 @@ function moveDodgerLeft() {
 document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowLeft") {
     moveDodgerLeft();
-  }
+  }  
 });
+// Right
+let dodger = document.getElementById("dodger");
+function moveDodgerRight() {
+  let leftNumbers = dodger.style.right.replace("px", "");
+  let right = parseInt(leftNumbers, 10);
+
+  if (right > 0) {
+    dodger.style.left = `${left + 1}px`;
+  }
+}
+document.addEventListener("keydown", function(e) {
+  if (e.key === "ArrowRight") {
+    moveDodgerRight();
+  }
+  
+});
+
